@@ -32,6 +32,7 @@ body{
     border-radius: 1rem;
     margin-bottom: 1rem;
     font-weight: 600;
+    word-break: break-all;
 }
 
 .calculadora button{

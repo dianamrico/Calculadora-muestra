@@ -16,7 +16,7 @@ botones.forEach (boton =>{
                 return
             }else if (botonApretado == "DEL"){
                 
-                if(pantalla.textContent.length == 1){ 
+                if(pantalla.textContent.length == 1 ){ 
                     pantalla.textContent = "0" 
                     return
                 }else{
@@ -34,7 +34,10 @@ botones.forEach (boton =>{
                 if(pantalla.textContent == "0"){
                     pantalla.textContent = botonApretado
                     return
-                }else{ 
+                }else if(pantalla.textContent.length == 30 ){
+                pantalla.textContent = "Error max  caracteres"
+                }
+                else{ 
                     pantalla.textContent = pantalla.textContent + botonApretado
                     return
                 }
